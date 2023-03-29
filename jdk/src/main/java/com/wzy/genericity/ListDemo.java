@@ -1,4 +1,4 @@
-package com.wzy.list;
+package com.wzy.genericity;
 
 import java.util.ArrayList;
 import java.util.List;
