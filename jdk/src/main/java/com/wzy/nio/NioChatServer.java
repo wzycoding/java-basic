@@ -54,6 +54,9 @@ public class NioChatServer {
         }
     }
 
+    /**
+     * 写入方法
+     */
     private static void doWriteable(SelectionKey selectionKey) throws IOException {
         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
         ByteBuffer byteBuffer = (ByteBuffer) selectionKey.attachment();
@@ -66,6 +69,9 @@ public class NioChatServer {
         }
     }
 
+    /**
+     * 读取方法
+     */
     private static void doRead(SelectionKey selectionKey) throws IOException {
         SocketChannel channel = (SocketChannel) selectionKey.channel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
@@ -86,6 +92,9 @@ public class NioChatServer {
         selectionKey.attach(responseByteBuffer);
     }
 
+    /**
+     * 接收请求
+     */
     private static void doAccept(Selector selector, SelectionKey selectionKey) throws IOException {
         ServerSocketChannel serverSocketChannel = (ServerSocketChannel) selectionKey.channel();
         // 接收请求

@@ -14,6 +14,7 @@ import java.nio.channels.SocketChannel;
 @SuppressWarnings("all")
 public class NioChatClient {
     public static void main(String[] args) throws IOException, InterruptedException {
+        //
         SocketChannel socketChannel = SocketChannel.open();
         InetSocketAddress inetSocketAddress = new InetSocketAddress("localhost", 7778);
 
@@ -28,7 +29,7 @@ public class NioChatClient {
             }
             System.out.println("===通道连接完成===");
         }
-        
+
         ByteBuffer byteBuffer = ByteBuffer.wrap("你好，我是马保国".getBytes());
         socketChannel.write(byteBuffer);
 
@@ -36,6 +37,6 @@ public class NioChatClient {
         socketChannel.read(responseBuffer);
         System.out.println("===接收到数据:" + new String(responseBuffer.array()).trim());
 
-        Thread.sleep(1000);
+        socketChannel.close();
     }
 }
