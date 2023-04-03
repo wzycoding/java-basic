@@ -5,29 +5,21 @@ import java.util.List;
 
 public class GenericityExtendsDemo {
     public static void main(String[] args) {
-        List<Person> personList = new ArrayList<>();
-        personList.add(new Student());
+        List<Integer> integerList = new ArrayList<>();
 
-        print(personList);
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(3);
 
-        List<Student> studentList = new ArrayList<>();
-
-        // 这样主要找不到这个T是什么，T要是Student的子类，Person的父类
-        // Student的子类没有也就是下限没有，Person的父类就是Object,上限是Object
-//        Collections.copy(studentList, personList);
+//        print(integerList);
     }
 
-    public static void print(List<? super Student> studentList) {
-//        使用类似<? super Integer>通配符作为方法参数时表示：
-//
-//        方法内部可以调用传入Integer引用的方法，例如：obj.setFirst(Integer n);；
-//
-//        方法内部无法调用获取Integer引用的方法（Object除外），例如：Integer n = obj.getFirst();。
-//
-//        即使用super通配符表示只能写不能读。
-//        Student object = studentList.get(1);
-
-    }
+//    public static void print(List<? super Student> studentList) {
+//        Student student;
+//        for (int i = 0; i < studentList.size(); i++) {
+//            student = studentList.get(i);
+//        }
+//    }
 
     public static class Person<T> {
         protected String name;
