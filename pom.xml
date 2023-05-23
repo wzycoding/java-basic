@@ -24,6 +24,7 @@
         <module>elastic-search</module>
         <module>pattern</module>
         <module>leetcode</module>
+        <module>algorithm</module>
     </modules>
 
     <dependencies>
