@@ -9,7 +9,7 @@ package com.wzy.sort;
 public class MergeSort {
 
     public static void main(String[] args) {
-        int[] intArray = {1, 4, 2, 6, 7, 8, 3, 5};
+        int[] intArray = {1, 4, 2, 6, 7, 8, 3, 5, 9, 0, 12};
         mergeSort(intArray, intArray.length);
         printArray(intArray);
     }
