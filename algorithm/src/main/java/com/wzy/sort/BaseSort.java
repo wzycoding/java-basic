@@ -63,7 +63,7 @@ public class BaseSort {
     }
 
     /**
-     * 插入排序
+     * 选择排序
      *
      * @param intArray 数组
      * @param n        数组长度
