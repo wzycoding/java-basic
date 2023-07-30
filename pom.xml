@@ -25,6 +25,7 @@
         <module>pattern</module>
         <module>leetcode</module>
         <module>algorithm</module>
+        <module>algo-master</module>
     </modules>
 
     <dependencies>
