@@ -245,4 +245,16 @@ public class SinglyLinkedList {
         }
     }
 
+    /**
+     * 输出链表元素
+     */
+    public void printAll() {
+        Node p = head;
+        while (p != null) {
+            System.out.print(p.data + " ");
+            p = p.next;
+        }
+        System.out.println();
+    }
+
 }
