@@ -33,7 +33,6 @@ public class GenericArray<T> {
         if (targetSize > this.data.length) {
             resize();
         }
-        return;
     }
 
     private void resize() {
