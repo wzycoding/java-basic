@@ -35,6 +35,14 @@ public class SinglyLinkedList {
             this.data = data;
             this.next = next;
         }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "data=" + data +
+                    ", next=" + next +
+                    '}';
+        }
     }
 
     /**
@@ -255,6 +263,41 @@ public class SinglyLinkedList {
             p = p.next;
         }
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+
+        singlyLinkedList.insertToHead(new SinglyLinkedList.Node(1, null));
+        singlyLinkedList.insertToHead(new SinglyLinkedList.Node(2, null));
+        singlyLinkedList.insertToHead(new SinglyLinkedList.Node(3, null));
+        singlyLinkedList.printAll();
+
+        Node secondNode = singlyLinkedList.findByIndex(1);
+        System.out.println("链表中第二个元素：" + secondNode);
+        Node value2Node = singlyLinkedList.findByValue(2);
+        System.out.println("链表中值等于2的元素：" + value2Node);
+
+        singlyLinkedList.insertToHead(4);
+        singlyLinkedList.printAll();
+
+        singlyLinkedList.insertTail(0);
+        singlyLinkedList.printAll();
+
+        singlyLinkedList.insertAfter(secondNode, -1);
+        singlyLinkedList.printAll();
+
+        singlyLinkedList.insertAfter(secondNode, new Node(-2, null));
+        singlyLinkedList.printAll();
+
+        singlyLinkedList.insertBefore(secondNode, new Node(6, null));
+        singlyLinkedList.insertBefore(secondNode, 7);
+        singlyLinkedList.printAll();
+
+        singlyLinkedList.deleteByNode(secondNode);
+        singlyLinkedList.deleteByValue(0);
+        singlyLinkedList.printAll();
+
     }
 
 }
