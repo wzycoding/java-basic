@@ -265,6 +265,17 @@ public class SinglyLinkedList {
         System.out.println();
     }
 
+    /**
+     * 判断是否是回文
+     *
+     * @return 是否是回文
+     */
+    public boolean palindrome() {
+
+        return false;
+
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
 
