@@ -26,6 +26,7 @@
         <module>leetcode</module>
         <module>algorithm</module>
         <module>algo-master</module>
+        <module>springboot-app</module>
     </modules>
 
     <dependencies>
