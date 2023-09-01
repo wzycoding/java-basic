@@ -27,6 +27,7 @@
         <module>algorithm</module>
         <module>algo-master</module>
         <module>springboot-app</module>
+        <module>rocketmq</module>
     </modules>
 
     <dependencies>
