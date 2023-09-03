@@ -19,7 +19,9 @@ public class ProducerTest {
 
     @Test
     public void sendMsg() {
+        String msgInfo = "SpringBoot发出的消息：" + System.currentTimeMillis();
+        log.info("发出消息内容：" + msgInfo);
         rocketMQTemplate.convertAndSend("TestTopic",
-                "SpringBoot发出的消息：" + System.currentTimeMillis());
+                msgInfo);
     }
 }
