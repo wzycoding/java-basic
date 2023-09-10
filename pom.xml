@@ -36,16 +36,11 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <seata.version>1.4.2</seata.version>
+        <seata.version>1.7.0</seata.version>
+        <alibaba.cloud.version>2.2.6.RELEASE</alibaba.cloud.version>
     </properties>
 
     <dependencies>
-        <!-- 日志记录 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
-
         <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -84,7 +79,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-seata</artifactId>
-                <version>2.1.0.RELEASE</version>
+                <version>2.2.0.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>io.seata</groupId>
