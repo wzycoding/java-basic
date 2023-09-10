@@ -6,6 +6,7 @@ import com.wzy.feign.param.OrderCreateParam;
 import com.wzy.feign.param.StockDeductParam;
 import com.wzy.param.MakeOrderParam;
 import com.wzy.service.BusinessService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,7 @@ public class BusinessServiceImpl implements BusinessService {
     private OrderFeignClient orderFeignClient;
 
     @Override
+    @GlobalTransactional(rollbackFor = Exception.class)
     public String makeOrder(MakeOrderParam makeOrderParam) {
 
         // 1、先扣减库存
