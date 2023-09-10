@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 
 @Slf4j
 @RestController
-@RequestMapping("/business/inter")
+@RequestMapping("/business/integration")
 public class BusinessController {
 
     @Resource

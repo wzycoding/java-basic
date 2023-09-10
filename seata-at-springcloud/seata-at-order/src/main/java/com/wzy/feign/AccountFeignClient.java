@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(value = "account-server")
 public interface AccountFeignClient {
 
-    @PostMapping("/deductAmount")
+    @PostMapping("/account/inter/deductAmount")
     Integer deductAmount(@RequestBody AccountDeductParam accountDeductParam);
 }

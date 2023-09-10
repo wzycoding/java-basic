@@ -36,7 +36,7 @@ public class OrderServiceImpl implements OrderService {
 
         order.setProductId(orderCreateParam.getProductId());
         order.setUserId(orderCreateParam.getPayAmount());
-        order.setPayAmount(order.getPayAmount());
+        order.setPayAmount(orderCreateParam.getPayAmount());
         order.setCount(orderCreateParam.getCount());
 
         return orderMapper.insert(order);
