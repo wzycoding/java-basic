@@ -6,6 +6,7 @@ import lombok.Data;
 @TableName("t_order")
 @Data
 public class Order {
+    
     private Integer id;
 
     private Integer userId;

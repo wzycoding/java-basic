@@ -1,7 +1,7 @@
 package com.wzy.controller;
 
 import com.wzy.param.AccountDeductParam;
-import com.wzy.service.AccountService;
+import com.wzy.service.AccountTccDeductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,11 +16,12 @@ import javax.annotation.Resource;
 public class AccountInterController {
 
     @Resource
-    private AccountService accountService;
+    private AccountTccDeductService accountTccDeductService;
 
     @PostMapping("/deductAmount")
     public Integer deductAmount(@RequestBody AccountDeductParam accountDeductParam) {
-        Integer deductResult = accountService.deduct(accountDeductParam.getUserId(), accountDeductParam.getAmount());
+        Integer deductResult = accountTccDeductService.deductAmount(null,
+                accountDeductParam.getUserId(), accountDeductParam.getAmount());
 
         if (deductResult <= 0) {
             throw new RuntimeException("用户账户金额扣减失败");
@@ -28,6 +29,4 @@ public class AccountInterController {
 
         return deductResult;
     }
-
-
 }

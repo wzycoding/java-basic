@@ -1,7 +1,7 @@
 package com.wzy.controller;
 
 import com.wzy.param.StockDeductParam;
-import com.wzy.service.StockService;
+import com.wzy.service.StockTccDeductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,11 +16,11 @@ import javax.annotation.Resource;
 public class StockInterController {
 
     @Resource
-    private StockService stockService;
+    private StockTccDeductService stockTccDeductService;
 
     @PostMapping("/deductCount")
     public Integer deductCount(@RequestBody StockDeductParam stockDeductParam) {
-        Integer deductResult = stockService.deduct(stockDeductParam.getProductId(),
+        Integer deductResult = stockTccDeductService.stockDeduct(null, stockDeductParam.getProductId(),
                 stockDeductParam.getCount());
         if (deductResult <= 0) {
             throw new RuntimeException("商品库存扣减失败");
