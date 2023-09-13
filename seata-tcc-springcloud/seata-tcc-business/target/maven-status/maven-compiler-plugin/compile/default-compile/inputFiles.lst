@@ -1,0 +1,9 @@
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/service/BusinessService.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/BusinessApplication.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/param/MakeOrderParam.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/feign/OrderFeignClient.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/feign/param/OrderCreateParam.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/controller/BusinessController.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/service/impl/BusinessServiceImpl.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/feign/StockFeignClient.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-business/src/main/java/com/wzy/feign/param/StockDeductParam.java

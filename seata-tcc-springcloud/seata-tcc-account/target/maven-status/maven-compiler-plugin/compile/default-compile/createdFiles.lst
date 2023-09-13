@@ -1,0 +1,7 @@
+com/wzy/param/AccountDeductParam.class
+com/wzy/dao/AccountMapper.class
+com/wzy/AccountApplication.class
+com/wzy/entity/Account.class
+com/wzy/service/impl/AccountTccDeductServiceImpl.class
+com/wzy/service/AccountTccDeductService.class
+com/wzy/controller/AccountInterController.class

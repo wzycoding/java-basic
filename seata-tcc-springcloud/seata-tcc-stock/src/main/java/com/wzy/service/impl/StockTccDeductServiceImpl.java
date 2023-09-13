@@ -39,7 +39,7 @@ public class StockTccDeductServiceImpl implements StockTccDeductService {
         Integer count = businessActionContext.getActionContext("count", Integer.class);
 
         log.info("扣减库存事务提交， 商品id:{}, 扣减数量:{}", productId, count);
-        return false;
+        return true;
     }
 
     @Override

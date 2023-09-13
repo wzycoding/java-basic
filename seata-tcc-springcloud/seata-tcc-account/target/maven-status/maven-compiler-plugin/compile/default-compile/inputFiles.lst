@@ -1,0 +1,7 @@
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/service/AccountTccDeductService.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/AccountApplication.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/service/impl/AccountTccDeductServiceImpl.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/dao/AccountMapper.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/param/AccountDeductParam.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/entity/Account.java
+/Users/wzy/project/study/server/java-basic/seata-tcc-springcloud/seata-tcc-account/src/main/java/com/wzy/controller/AccountInterController.java

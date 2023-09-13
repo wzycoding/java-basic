@@ -1,0 +1,7 @@
+com/wzy/StockApplication.class
+com/wzy/dao/StockMapper.class
+com/wzy/controller/StockInterController.class
+com/wzy/service/StockTccDeductService.class
+com/wzy/entity/Stock.class
+com/wzy/service/impl/StockTccDeductServiceImpl.class
+com/wzy/param/StockDeductParam.class

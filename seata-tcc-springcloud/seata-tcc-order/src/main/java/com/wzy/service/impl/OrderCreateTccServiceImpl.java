@@ -37,6 +37,7 @@ public class OrderCreateTccServiceImpl implements OrderCreateTccService {
 
         Integer id = orderMapper.insert(order);
         orderCreateParam.setId(id);
+        log.info("订单创建成功，id：{}", id);
 
         return id;
     }

@@ -25,7 +25,6 @@
         <module>pattern</module>
         <module>leetcode</module>
         <module>algorithm</module>
-        <module>algo-master</module>
         <module>springboot-app</module>
         <module>rocketmq</module>
         <module>rocketmq-springboot</module>
