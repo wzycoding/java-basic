@@ -45,17 +45,19 @@ public class AccountTccDeductServiceImpl implements AccountTccDeductService {
     @Override
     public boolean rollback(BusinessActionContext businessActionContext) {
 
-        Integer userId = businessActionContext.getActionContext("userId", Integer.class);
-        Integer amount = businessActionContext.getActionContext("amount", Integer.class);
+//        Integer userId = businessActionContext.getActionContext("userId", Integer.class);
+//        Integer amount = businessActionContext.getActionContext("amount", Integer.class);
+//
+//        LambdaUpdateWrapper<Account> updateWrapper = new LambdaUpdateWrapper<>();
+//
+//        updateWrapper.eq(Account::getUserId, userId);
+//        updateWrapper.ge(Account::getAmount, amount);
+//        updateWrapper.setSql("amount = amount + " + amount);
+//
+//        log.info("扣减库存事务回滚， 商品id:{}, 扣减金额:{}", userId, amount);
+//
+//        return accountMapper.update(null, updateWrapper) > 0;
 
-        LambdaUpdateWrapper<Account> updateWrapper = new LambdaUpdateWrapper<>();
-
-        updateWrapper.eq(Account::getUserId, userId);
-        updateWrapper.ge(Account::getAmount, amount);
-        updateWrapper.setSql("amount = amount + " + amount);
-
-        log.info("扣减库存事务回滚， 商品id:{}, 扣减金额:{}", userId, amount);
-
-        return accountMapper.update(null, updateWrapper) > 0;
+        return true;
     }
 }
