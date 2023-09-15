@@ -1,6 +1,8 @@
 package com.wzy.concurrent.thread;
 
 /**
+ * 使用Thread类线程
+ *
  * @author wzy
  * @version 1.0
  * @date 2022/6/24 11:47 上午

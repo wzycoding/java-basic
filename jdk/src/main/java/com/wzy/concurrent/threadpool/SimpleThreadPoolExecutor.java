@@ -5,6 +5,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 线程池基本用法
+ *
  * @author wzy
  * @version 1.0
  * @date 2022/6/28 6:49 下午
