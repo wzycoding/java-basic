@@ -1,7 +1,7 @@
 package com.wzy.concurrent.thread;
 
 /**
- * 使用Thread类线程
+ * 使用Thread类线程，线程的六种状态
  * 1、NEW(初始化)
  * 2、RUNNABLE(运行)
  * 3、BLOCKED(阻塞)
