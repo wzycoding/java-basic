@@ -1,7 +1,0 @@
-com/wzy/param/AccountDeductParam.class
-com/wzy/dao/AccountMapper.class
-com/wzy/AccountApplication.class
-com/wzy/entity/Account.class
-com/wzy/service/impl/AccountServiceImpl.class
-com/wzy/controller/AccountInterController.class
-com/wzy/service/AccountService.class

@@ -1,9 +1,0 @@
-com/wzy/service/BusinessService.class
-com/wzy/BusinessApplication.class
-com/wzy/param/MakeOrderParam.class
-com/wzy/service/impl/BusinessServiceImpl.class
-com/wzy/feign/param/OrderCreateParam.class
-com/wzy/feign/StockFeignClient.class
-com/wzy/feign/param/StockDeductParam.class
-com/wzy/feign/OrderFeignClient.class
-com/wzy/controller/BusinessController.class
