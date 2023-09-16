@@ -9,6 +9,15 @@ import java.util.concurrent.*;
  * 3、直接创建线程池，将Runnable接口对象提交到线程池
  * 4、继承Thread类，覆盖run方法
  * 5、CompletableFuture异步非阻塞方法，如果不指定线程池，则使用公用线程池
+ * <p>
+ * <p>
+ * 使用Thread类线程，线程的六种状态
+ * 1、NEW(初始化)
+ * 2、RUNNABLE(运行)
+ * 3、BLOCKED(阻塞)
+ * 4、WAITING(等待)
+ * 5、TIME_WAITING(超时等待)
+ * 6、TERMINATED(终止)
  *
  * @author wzy
  * @date 2023-09-16 10:24:08
