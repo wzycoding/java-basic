@@ -7,7 +7,8 @@ import java.util.concurrent.*;
  * 1、实现Runnable接口
  * 2、FutureTask内部传入Callable接口，并提交到线程池
  * 3、直接创建线程池，将Runnable接口对象提交到线程池
- * 4、继承Thread类，覆盖run方法，
+ * 4、继承Thread类，覆盖run方法
+ * 5、CompletableFuture异步非阻塞方法，如果不指定线程池，则使用公用线程池
  *
  * @author wzy
  * @date 2023-09-16 10:24:08
