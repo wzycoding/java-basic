@@ -29,6 +29,7 @@
         <module>rocketmq-springboot</module>
         <module>seata-tcc-springcloud</module>
         <module>seata-at-springcloud</module>
+        <module>websocket-chat</module>
     </modules>
 
     <properties>
