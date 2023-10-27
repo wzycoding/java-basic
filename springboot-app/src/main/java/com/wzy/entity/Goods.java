@@ -47,6 +47,6 @@ public class Goods {
     /**
      * 更新时间
      */
-    private Date updateTime;
+    private Date modifyTime;
 }
 

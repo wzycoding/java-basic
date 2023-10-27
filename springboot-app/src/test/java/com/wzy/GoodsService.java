@@ -16,11 +16,12 @@ public class GoodsService {
     private GoodsMapper goodsMapper;
 
     @Transactional(rollbackFor = Exception.class)
-    public void addGoods(Goods goods) {
+    public int addGoods(Goods goods) {
         int count = goodsMapper.insert(goods);
 
         if (count > 0) {
             System.out.println("==数据插入成功==");
+            return count;
         }
 
         throw new NullPointerException("手动抛出异常");
