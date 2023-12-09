@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * @author wzy
+ */
 public class SocketClient {
     @SuppressWarnings("all")
     public static void main(String[] args) throws IOException {
