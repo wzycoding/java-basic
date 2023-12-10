@@ -1,7 +1,8 @@
 package com.wzy.task;
 
+import com.xxl.job.core.biz.model.ReturnT;
+import com.xxl.job.core.handler.annotation.XxlJob;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,8 +12,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserTask {
 
-    @Scheduled(cron = "0/2 * * * * ?")
-    public void loadUserCache() {
-        log.info("load user cache");
+    /**
+     * 每天凌晨两点发放用户积分
+     */
+    @XxlJob(value = "grantUserCreditsTask")
+    public ReturnT<String> grantUserCreditsTask(String param) {
+        log.info("======grant user credits======");
+        return ReturnT.SUCCESS;
     }
 }
