@@ -1,7 +1,8 @@
-package com.wzy;
+package com.wzy.mockito;
 
 import com.wzy.entity.Goods;
 import com.wzy.mapper.GoodsMapper;
+import com.wzy.transactional.GoodsService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

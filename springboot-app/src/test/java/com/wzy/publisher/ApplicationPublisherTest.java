@@ -1,7 +1,5 @@
-package com.wzy;
+package com.wzy.publisher;
 
-import com.wzy.publisher.LoginEvent;
-import com.wzy.publisher.PlaceOrderEvent;
 import com.wzy.utils.SpringContextHolder;
 import org.junit.Test;
 import org.junit.runner.RunWith;

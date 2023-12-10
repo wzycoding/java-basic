@@ -1,4 +1,4 @@
-package com.wzy;
+package com.wzy.transactional;
 
 import com.wzy.entity.Goods;
 import com.wzy.mapper.GoodsMapper;
